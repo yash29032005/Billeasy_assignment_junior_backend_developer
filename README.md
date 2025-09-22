@@ -5,40 +5,42 @@
    git clone <your-repo-link>
    cd book-review-api
 
-3. Install dependencies
+3. **Install dependencies**
    ```bash
    npm i
 
-4. Add mongoDB URL in the .env file
+4. **Add mongoDB URL in the .env file**
    MONGO_URL=here
 
-5. Start the server
+5. **Start the server**
    ```bash
    npm run dev
 
-6. Send request
+6. **Send request**
    http://localhost:5000 (Postman)
 
-Features:
+7. **Features:**
 
-POST /api/auth/register
-curl --location 'http://localhost:5000/api/auth/register' \
---header 'Content-Type: application/json' \
---header 'Cookie: Cookie_1=value' \
---data-raw '{
-"name":"yash",
-"email":"yash@gmail.com",
-"password":"yash1234"
-}'
+   ```bash
+   POST /api/auth/register
+   curl --location 'http://localhost:5000/api/auth/register' \
+   --header 'Content-Type: application/json' \
+   --header 'Cookie: Cookie_1=value' \
+   --data-raw '{
+   "name":"yash",
+   "email":"yash@gmail.com",
+   "password":"yash1234"
+   }'
 
+  ```bash
 POST api/auth/login
-curl --location 'http://localhost:5000/api/auth/login' \
---header 'Content-Type: application/json' \
---header 'Cookie: Cookie_1=value' \
---data-raw '{
-"email":"yash@gmail.com",
-"password":"yash1234"
-}'
+   curl --location 'http://localhost:5000/api/auth/login' \
+   --header 'Content-Type: application/json' \
+   --header 'Cookie: Cookie_1=value' \
+   --data-raw '{
+   "email":"yash@gmail.com",
+   "password":"yash1234"
+   }'
 
 save the token in the header like this:
 authorization:place_the_token_here
