@@ -20,7 +20,8 @@
    http://localhost:5000 (Postman)
 
 7. **Features:**
-7.1 ***Register a new user***
+   
+7.1 **Register a new user**
 curl --location 'http://localhost:5000/api/auth/register' \
 --header 'Content-Type: application/json' \
 --header 'Cookie: Cookie_1=value' \
