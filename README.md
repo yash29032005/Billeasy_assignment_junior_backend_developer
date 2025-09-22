@@ -1,19 +1,22 @@
-Setup Instructions:
+## Setup Instructions:
 
-1. Clone the repo:
+1. **Clone the repo:**
+   ```bash
    git clone <your-repo-link>
    cd book-review-api
 
-2. Install dependencies
+3. Install dependencies
+   ```bash
    npm i
 
-3. Add mongoDB URL in the .env file
+4. Add mongoDB URL in the .env file
    MONGO_URL=here
 
-4. Start the server
+5. Start the server
+   ```bash
    npm run dev
 
-5. Send request
+6. Send request
    http://localhost:5000 (Postman)
 
 Features:
